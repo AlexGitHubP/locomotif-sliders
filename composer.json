@@ -10,5 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Locomotif\\Sliders\\SlidersServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+       "psr-4": {
+           "Locomotif\\": ""
+        }
+    }
 }

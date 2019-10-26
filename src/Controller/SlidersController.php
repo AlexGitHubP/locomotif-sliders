@@ -8,6 +8,10 @@ use Locomotif\Sliders\Models\Sliders;
 
 class SlidersController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('authgate');
+    }
     /**
      * Display a listing of the resource.
      *

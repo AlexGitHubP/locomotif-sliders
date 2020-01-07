@@ -46,7 +46,7 @@ class SlidersController extends Controller
         $slider->status = $request->status;
         $slider->save();
 
-        return redirect('/admin/sliders/'.$slider->id);
+        return redirect('/admin/sliders/'.$slider->id.'/edit/');
 
     }
 
@@ -84,7 +84,7 @@ class SlidersController extends Controller
         $slider->name = $request->name;
         $slider->save();
 
-        return redirect('/admin/sliders');
+        return redirect('/admin/sliders/'.$slider->id.'/edit/');
     }
 
     /**

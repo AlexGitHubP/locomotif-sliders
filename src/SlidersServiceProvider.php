@@ -24,7 +24,7 @@ class SlidersServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/Routes/routes.php');
-        $this->loadViewsFrom(__DIR__.'/views', 'sliders');
+        $this->loadViewsFrom(resource_path('views/locomotif/sliders'), 'sliders');
         $this->loadMigrationsFrom(__DIR__.'/Database/Migrations');
 
         $this->publishes([
